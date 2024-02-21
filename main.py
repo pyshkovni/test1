@@ -6,4 +6,9 @@ app = Flask('app')
 def hello_world():
   return 'Hello, World!'
 
+@app.route('/about')
+def about():
+    return 'About'
+
+
 app.run(host='0.0.0.0', port=8080)
